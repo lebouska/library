@@ -104,7 +104,9 @@ form input {
     padding: 15px;
     background-color: #C5E6DC;
     border: solid 3px #86a098;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 20px;
     line-height: 30px;
     font-weight: bold;
