@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÊbouska's library</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="author" content="Lebouska">
+    <meta name="description" content="Library">
+    <link rel="apple-touch-icon" sizes="57x57" href="./Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="bar">
+        <div>
+            <img src="./Logo.png" alt="Lebouska's library Logo, its a book with the letter L on the cover.">
+            <h1>LÊbouska's Library</h1>
+        </div>
+        <form>
+            <label for="name">Book's name:</label>
+            <input type="text" id="name" required>
+            <label for="author">Authors's name:</label>
+            <input type="text" id="author" required>
+            <label for="pages" >Number of pages:</label>
+            <input type="text" id="pages" pattern="[0-9]+" required>
+            <div>
+                <input type="checkbox" id="status" >
+                <label for="status">I read this book.</label>
+            </div>
+            <input type="button" id="addBook" value="Add book to colection">
+        </form>
+        <div id="result">
+            Total books: <span id="total">00</span>
+            Read: <span id="read">00</span>
+            Not read: <span id="notRead">00</span>
+        </div>
+        <span id="footer">This site was made by Lebouska.</span>
+    </div>
+    <div class="library">
+    </div>  
+</body>
+</html>

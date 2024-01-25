@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'goudy_bookletter_1911regular';
+    src: url('./fonte/goudybookletter1911-regular-webfont.woff2') format('woff2'),
+         url('./fonte/goudybookletter1911-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'goudy_bookletter_1911regular';
+    letter-spacing: 0.15rem;
+    background-color: #E5D1AD;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    margin: 0px;
+    height: 100vh;
+
+}
+
+.bar {
+    background-color: #D4C8E6;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 20px;
+    border-right: solid 3px rgba(0, 0, 0, 0.274);
+}
+
+.bar img {
+    height: 75px;
+    width: auto;
+    filter:drop-shadow(5px 5px 5px rgba(128, 128, 128, 0.479));
+}
+
+h1 {
+    color: #E6B1A3;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+form input {
+    background-color: rgba(255, 255, 255, 0.295);
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#addBook {
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #c3ade4;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#addBook:hover {
+    background-color: #8855d4;
+    color: wheat;
+}
+
+#result {
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 30px;
+}
+
+#result span {
+    font-size: 30px;
+}
+
+#footer {
+    font-size: 12px;
+}
+
+.library {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, min-content));
+    grid-template-rows: min-content;
+    grid-auto-rows: min-content;
+    gap: 15px
+}
+
+.card {
+    padding: 15px;
+    background-color: #C5E6DC;
+    border: solid 3px #86a098;
+    display: grid;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px grey;
+
+}
+
+.card div div {
+    display: flex;
+    gap: 5px;
+}
+
+.card span {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.card button {
+    background-color: #2cca9b;
+    width: 120px;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+.card button.burn {
+    background-color: rgb(187, 144, 144);
+    margin-left: 15px;
+}
+
+.buttons {
+    justify-self: center;
+}
+
+.card.greyColor {
+    background-color: rgb(153, 153, 153);
+    border-color: rgb(117, 117, 117);;
+}
